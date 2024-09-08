@@ -1,5 +1,5 @@
 const mapAsync = require('./asyncMap')
-
+const customPromiseAll = require('./customPromiseAll');
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function asyncTask(item) {
@@ -17,3 +17,5 @@ async function test() {
 }
 
 test();
+
+
